@@ -1,0 +1,271 @@
+/* -------------------------- variable -------------------------- */
+
+$font-family: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+"Roboto",
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
+
+$blue: #007bff !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$green: #28a745 !default;
+$grey: #aaa !default;
+
+/* -------------------------- function -------------------------- */
+
+
+// 1. 超过指定行显示省略号 默认一行
+@mixin toe($line: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+// 2. 旋转角度
+@mixin rotate($d: 45deg) {
+  transform: rotate($deg);
+  transform-origin: 50% 50%;
+}
+
+/* -------------------------- class -------------------------- */
+
+// font
+.font {
+  &-small {
+    font-size: .8em;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-light {
+    font-weight: 300;
+  }
+
+  &-blue {
+    color: $blue;
+  }
+
+  &-red {
+    color: $red;
+  }
+
+  &-orange {
+    color: $orange;
+  }
+
+  &-green {
+    color: $green;
+  }
+
+  &-grey {
+    color: $grey;
+  }
+}
+
+// 
+.bg {
+  &-blue {
+    color: $blue;
+  }
+
+  &-red {
+    color: $red;
+  }
+
+  &-orange {
+    color: $orange;
+  }
+
+  &-green {
+    color: $green;
+  }
+
+  &-grey {
+    color: $grey;
+  }
+
+}
+
+// 浮动
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+// 清除浮动
+.clearfix {
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+  }
+
+}
+
+// cursor point
+.cursor {
+  cursor: pointer;
+}
+
+// 超过1行显示省略号 
+.toe {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+
+  &2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+}
+
+// 旋转角度
+.rotate {
+  &45 {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+  }
+
+  &90 {
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+  }
+
+  &180 {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+  }
+
+  &270 {
+    transform: rotate(270deg);
+    transform-origin: 50% 50%;
+  }
+}
+
+// box-shadow
+.box-shadow {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+  &:hover,
+  &:active {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12)
+  }
+}
+
+// transition
+.transition {
+  transition: all .45s cubic-bezier(.23, 1, .32, 1)
+}
+
+// flex
+.flex {
+  &-ccc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-rcc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// 子元素居中
+.child-cen {
+  position: relative;
+
+  .cen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+/* -------------------------- base -------------------------- */
+
+body {
+  font-family: $font-family !important;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
