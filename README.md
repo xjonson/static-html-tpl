@@ -18,10 +18,10 @@
 ## 已引入的库
 
 css：
-  - reset.css 已整合进class.css中
+  - `reset.css` 已整合进 `class.css` 中
 
 js: 
-  - jquery-3.3.1.min.js
+  - `jquery-3.3.1.min.js`
 
 ## 建议
 
@@ -29,4 +29,4 @@ js:
 
 ## 备注
 
-class.scss 中含有一些常用的类与变量
+`class.scss` 中含有一些常用的类与变量
