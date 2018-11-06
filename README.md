@@ -20,6 +20,7 @@
 
 css：
   - `reset.css` 已整合进 `class.css` 中
+  - `class.scss` 中含有一些常用的类与变量
 
 js: 
   - `jquery-3.3.1.min.js`
@@ -28,6 +29,16 @@ js:
 
 建议使用 vscode 与以下两插件 [Live Server](https://github.com/ritwickdey/live-server-web-extension) 与 [Live Sass Compiler](https://github.com/ritwickdey/vscode-live-sass-compiler) 辅助开发
 
+
+
 ## 备注
 
-`class.scss` 中含有一些常用的类与变量
+更多meta标签参阅： [meta标签整理](https://blog.csdn.net/yc123h/article/details/51356143)
+
+使用bootstrap4：[v4.bootcss](https://v4.bootcss.com/)
+
+引入更多插件：[BootCDN](https://www.bootcdn.cn/)
+
+
+
+-----
