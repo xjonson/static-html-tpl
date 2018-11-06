@@ -19,7 +19,7 @@
 ## 已引入的库
 
 css：
-  - `reset.css` 已整合进 `class.css` 中
+  - `reset.css` 已整合进 `class.scss` 中
   - `class.scss` 中含有一些常用的类与变量
 
 js: 
@@ -27,11 +27,11 @@ js:
 
 ## 建议
 
-建议使用 vscode 与以下两插件 [Live Server](https://github.com/ritwickdey/live-server-web-extension) 与 [Live Sass Compiler](https://github.com/ritwickdey/vscode-live-sass-compiler) 辅助开发
+使用 vscode [Live Server](https://github.com/ritwickdey/live-server-web-extension) & [Live Sass Compiler](https://github.com/ritwickdey/vscode-live-sass-compiler) 辅助开发
 
 
 
-## 备注
+## More
 
 更多meta标签参阅： [meta标签整理](https://blog.csdn.net/yc123h/article/details/51356143)
 
