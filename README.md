@@ -4,12 +4,13 @@
 
 ```
 .
-└── css 由 scss 编译出
+└── css  由 scss 编译出
 ├── images
+    └── favicon.ico 
 ├── js
 └── scss
-    ├── class.scss 含有公共类、颜色方法等
-    └── index.scss 首页样式(空)
+    ├── class.scss  含有公共类、颜色方法等
+    └── index.scss  首页样式(空)
 ├── index.html 
 └── README.md
  
