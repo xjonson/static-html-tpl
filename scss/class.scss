@@ -43,6 +43,10 @@ $grey: #aaa !default;
     font-size: .8em;
   }
 
+  &-big {
+    font-size: 1.2em;
+  }
+
   &-bold {
     font-weight: 700;
   }
@@ -75,23 +79,23 @@ $grey: #aaa !default;
 // 
 .bg {
   &-blue {
-    color: $blue;
+    background-color: $blue;
   }
 
   &-red {
-    color: $red;
+    background-color: $red;
   }
 
   &-orange {
-    color: $orange;
+    background-color: $orange;
   }
 
   &-green {
-    color: $green;
+    background-color: $green;
   }
 
   &-grey {
-    color: $grey;
+    background-color: $grey;
   }
 
 }
