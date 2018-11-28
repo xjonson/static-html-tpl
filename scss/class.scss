@@ -47,6 +47,13 @@ $grey: #aaa !default;
     font-size: 1.2em;
   }
 
+  &-bigger {
+    font-size: 1.5em;
+  }
+  &-14 {
+    font-size: 14px;
+  }
+
   &-bold {
     font-weight: 700;
   }
@@ -201,7 +208,13 @@ $grey: #aaa !default;
 }
 
 // 子元素居中
-.child-cen {
+.text-center {
+  text-align: center;
+}
+.block-center {
+  margin: 0 auto;
+}
+.position-center {
   position: relative;
 
   .cen {
@@ -218,58 +231,4 @@ $grey: #aaa !default;
 
 body {
   font-family: $font-family !important;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
