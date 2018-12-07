@@ -39,86 +39,69 @@ $grey: #aaa !default;
 
 // font
 .font {
-  &-small {
+  &.small {
     font-size: .8em;
   }
-
-  &-big {
+  &.big {
     font-size: 1.2em;
   }
-
-  &-bigger {
+  &.bigger {
     font-size: 1.5em;
   }
-  &-14 {
+  &.14 {
     font-size: 14px;
   }
-
-  &-bold {
+  &.bold {
     font-weight: 700;
   }
-
-  &-light {
+  &.light {
     font-weight: 300;
   }
-
-  &-blue {
+  &.blue {
     color: $blue;
   }
-
-  &-red {
+  &.red {
     color: $red;
   }
-
-  &-orange {
+  &.orange {
     color: $orange;
   }
-
-  &-green {
+  &.green {
     color: $green;
   }
-
-  &-grey {
+  &.grey {
     color: $grey;
   }
 }
 
 // 
 .bg {
-  &-blue {
+  &blue {
     background-color: $blue;
   }
-
-  &-red {
+  &red {
     background-color: $red;
   }
-
-  &-orange {
+  &orange {
     background-color: $orange;
   }
-
-  &-green {
+  &green {
     background-color: $green;
   }
-
-  &-grey {
+  &grey {
     background-color: $grey;
   }
-
 }
 
 // 浮动
 .fl {
   float: left;
 }
-
 .fr {
   float: right;
 }
-
 // 清除浮动
 .clearfix {
-
   &::after,
   &::before {
     content: "";
@@ -127,12 +110,40 @@ $grey: #aaa !default;
     height: 0;
     clear: both;
   }
-
 }
 
-// cursor point
-.cursor {
-  cursor: pointer;
+// flex
+.flex {
+  &-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-col-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// 子元素居中
+.text-center {
+  text-align: center;
+}
+.block-center {
+  margin: 0 auto;
+}
+.position-center {
+  position: relative;
+  .cen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
 }
 
 // 超过1行显示省略号 
@@ -142,7 +153,6 @@ $grey: #aaa !default;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-box-orient: vertical;
-
   &2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -174,6 +184,34 @@ $grey: #aaa !default;
     transform-origin: 50% 50%;
   }
 }
+// 旋转
+.rotate {
+  -webkit-animation: rotate .6s infinite linear;
+  animation: rotate .6s infinite linear
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
+}
 
 // box-shadow
 .box-shadow {
@@ -188,41 +226,6 @@ $grey: #aaa !default;
 // transition
 .transition {
   transition: all .45s cubic-bezier(.23, 1, .32, 1)
-}
-
-// flex
-.flex {
-  &-ccc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &-rcc {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-// 子元素居中
-.text-center {
-  text-align: center;
-}
-.block-center {
-  margin: 0 auto;
-}
-.position-center {
-  position: relative;
-
-  .cen {
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translate(-50%, -50%);
-  }
 }
 
 
